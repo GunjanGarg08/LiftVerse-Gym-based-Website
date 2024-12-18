@@ -1,0 +1,265 @@
+/* General Styling */
+body {
+    font-family:'Times New Roman', Times;
+    margin: 0;
+    padding: 0;
+}
+
+section, header {
+    border: 2px solid transparent;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    /* padding: 50px 80px; */
+    text-align: center;
+}
+
+/* Hero_Section - Header */
+.hero-section {
+    background-image: url(Images/Parallax1.jpg);
+}
+
+.hero {
+    /* border: 3px solid #EA3680; */
+    margin-top: 17vh;
+}
+
+.hero h1 {
+    font-size: 60px;
+    color: #EA3680;
+}
+
+.hero h1:hover {
+    color: #fee140;
+}
+
+.hero p {
+    font-size: 35px;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: white;
+}
+
+/* About-Story */
+.about-story {
+    height: 50vh;
+    background-color: #333;
+}
+
+.about {
+    /* border: 5px solid blue; */
+    margin-top: 12vh;
+    width: 1000px;
+    margin-left: 220px;
+}
+
+.about h2 {
+    font-size: 40px;
+    color: black;
+}
+
+.about h2:hover {
+    color: #fee140;
+}
+
+.about p {
+    font-size: 20px;
+    color: white;
+}
+
+/* Mission */
+.mission {
+    background-image: url(Images/Parallax2.jpg);
+}
+
+.mission-text {
+    /* border: 2px solid blue; */
+    margin-top: 33vh;
+    width: 1100px;
+    margin-left: 190px;
+}
+
+.mission h2 {
+    font-size: 40px;
+    color: #EA3680;
+}
+
+.mission h1:hover {
+    color: #fee140;
+}
+
+.mission p {
+    font-size: 20px;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: white;
+}
+
+/* Facilities */
+.facilities{
+    background-color: white;
+    color: black;
+}
+
+.facilities h2 {
+    /* border: 2px solid orange; */
+    margin-top: 10vh;
+    font-size: 60px;
+    color:#EA3680;
+    font-family:cursive;
+}
+
+.facilities .facility-items {
+    /* border: 2px solid blue; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 90px;
+}
+
+.facilities .facility-item {
+    width: 40%;
+    background: #f5f5f5;
+    padding: 0px 20px;
+    margin: 15px 0;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-left: 5px solid #EA3680;
+    color: black;
+    text-align: left;
+}
+
+.facilities .facility-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.facility-item h3 {
+    font-size: 25px;
+}
+
+.facility-item p {
+    font-size: 15px;
+}
+
+/* Why-Choose-Us */
+.why-choose-us {
+    background-image: url(Images/Parallax3.jpg);
+}
+
+.choose {
+    /* border: 2px solid blue; */
+    margin-top: 15vh;
+    width: 650px;
+    margin-left: 750px;
+}
+
+.choose h2 {
+    font-size: 50px;
+    color: #EA3680;
+    font-family: fantasy;
+}
+
+.choose h2:hover {
+    color: #fee140;
+}
+
+.choose ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.choose ul li {
+    /* background: #fee140; */
+    background: white;
+    margin: 30px 0;
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 5px solid #EA3680;
+    /* border-right: 5px solid #EA3680;
+    border-top: 2px solid #EA3680;
+    border-bottom: 2px solid #EA3680; */
+    transition: transform 0.3s ease;
+    font-size: 18px;
+   /
+}
+
+.choose ul li:hover {
+    transform: scale(1.02);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 5px 5px 15px white; */
+}
+
+.choose span {
+    color: #EA3680;
+    font-weight: bold;
+}
+
+/* Join-Us */
+.join-us {
+    height: 50vh;
+    background-color: #f5f5f5;
+}
+
+.join {
+    /* border: 5px solid blue; */
+    margin-top: 12vh;
+    width: 1000px;
+    margin-left: 220px;
+}
+
+.join h2 {
+    font-size: 40px;
+    color: black;
+}
+
+.join h2:hover {
+    color: #EA3680;
+}
+
+.join p {
+    font-size: 20px;
+    color: #333;
+}
+
+/* Commitment */
+.commitment {
+    background-image: url(Images/Parallax4.jpg);
+}
+
+.commit {
+    /* border: 2px solid blue; */
+    margin-top: 40vh;
+    width: 800px;
+    margin-left: 570px;
+}
+
+.commit h2 {
+    font-size: 40px;
+    color: #EA3680;
+}
+
+.commit h1:hover {
+    color: #fee140;
+}
+
+.commit p {
+    font-size: 20px;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: white;
+}
+
+/* Footer */
+footer {
+    /* border: 5px solid blue; */
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}

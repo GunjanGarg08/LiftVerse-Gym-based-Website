@@ -1,0 +1,247 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    /* border: 2px solid black; */
+    background: linear-gradient(to right, #EA3680, #fee140);
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.popup {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8); /* Darker background for more impact */
+    animation: fadeIn 0.5s; /* Fade-in animation */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.popup-content {
+    background-color: black;
+    background-size: cover;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    animation: slideIn 0.5s; /* Slide-in animation */
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.popup-content img {
+    width: 100%;
+    height: 150px;
+}
+
+.close {
+    color: #fff;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #ff0;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.popup-content h1 {
+    color: #ffcc00; /* Bright color for the header */
+    font-family: 'Arial', sans-serif;
+}
+
+#countdown {
+    font-size: 2rem;
+    color: white;
+    margin-top: 10px;
+    animation: pulse 1s infinite; /* Pulsing effect for the countdown */
+    font-family: fantasy;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.popup-image {
+    margin-top: 20px;
+    max-width: 100%;
+    height: auto; /* Responsive image */
+    border-radius: 8px; /* Rounded corners */
+}
+
+.hero-section h1 {
+    /* border: 2px solid black; */
+    font-size: 50px;
+    margin: 10px 0;
+}
+
+.hero-section p {
+    /* border: 2px solid black; */
+    font-size: 20px;
+}
+
+.class-overview {
+    /* border: 2px solid black; */
+    padding: 10px 50px;
+    text-align: center;
+}
+
+.class-overview h2 {
+    font-size: 40px;
+}
+
+.class-overview p {
+    font-size: 20px;
+}
+
+.class-grid {
+    /* border: 2px solid black; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.class-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.class-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.class-card h3 {
+    margin-top: 10px;
+    font-size: 24px;
+}
+
+.class-card p {
+    font-size: 16px;
+}
+
+.class-card button {
+    background-color: #EA3680;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.class-card button:hover {
+    background-color: #fee140;
+}
+
+.class-card:hover {
+    transform: scale(1.05);
+}
+
+img {
+    height: 250px;
+    width: 200px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    font-size: 20px;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-container {
+    position: relative;
+    background-color: white;
+    border-radius: 8px;
+    padding: 30px;
+    margin: 100px auto;
+    width: 300px;
+    text-align: center;
+    animation: fading 0.5s ease-in-out;
+}
+
+@keyframes fading {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.modal h2 {
+    margin-bottom: 20px;
+}
+
+.success-icon {
+    font-size: 50px;
+    color: #4CAF50;
+    margin-top: 20px;
+}
+
+/* Close Button Styles */
+.close-btn {
+    position: absolute; /* Position the button relative to the modal container */
+    right: 15px;
+    top: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #333;
+    z-index: 1001; /* Ensure the close button stays above everything */
+}
+
+.close-btn:hover {
+    color: #EA3680; /* Add hover effect for visual feedback */
+}

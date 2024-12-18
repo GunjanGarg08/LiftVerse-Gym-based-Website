@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Trainers - LiftVerse</title>
+    <link rel="stylesheet" href="Trainers.css">
+    <link rel="shortcut icon" href="Images/Symbol_Logo.png">
+</head>
+<body>
+    <header>
+        <h1>Meet Our Trainers</h1>
+        <p>Our trainers are here to guide you towards your fitness goals.</p>
+    </header>
+
+    <section class="trainers-section">
+        <h2 class="section-heading">Head Trainers</h2>
+
+        <!-- Head Trainers -->
+        <div class="trainer-card">
+            <img src="Images/Trainers/Emma.jpeg" alt="Trainer 1">
+            <h2>Emma J.</h2>
+            <p>Expertise: Yoga, Pilates</p>
+            <button class="view-more-btn" onclick="showTrainerInfo('Emma J.')">View Profile</button>
+        </div>
+
+        <div class="trainer-card">
+            <img src="Images/Trainers/Mike.jpeg" alt="Trainer 2">
+            <h2>Mike L.</h2>
+            <p>Expertise: Weightlifting, Bodybuilding</p>
+            <button class="view-more-btn" onclick="showTrainerInfo('Mike L.')">View Profile</button>
+        </div>
+
+        <div class="trainer-card">
+            <img src="Images/Trainers/Sophia.jpeg" alt="Trainer 3">
+            <h2>Sophia G.</h2>
+            <p>Expertise: HIIT, Cardio</p>
+            <button class="view-more-btn" onclick="showTrainerInfo('Sophia G.')">View Profile</button>
+        </div>
+
+        <!-- Assistant Trainers Section -->
+        <h2 class="section-heading">Assistant Trainers</h2>
+        <div class="trainer-card">
+            <img src="Images/Trainers/Michael2.jpg" alt="Assistant Trainer 2">
+            <h2>Michael Brown</h2>
+            <p>Expertise: Aerobics, Functional Training</p>
+            <button class="view-more-btn" onclick="showTrainerInfo('Michael Brown')">View Profile</button>
+        </div>
+
+        <div class="trainer-card">
+            <img src="Images/Trainers/Emily2.jpg" alt="Assistant Trainer 1">
+            <h2>Emily Parker</h2>
+            <p>Expertise: Strength Training, CrossFit</p>
+            <button class="view-more-btn" onclick="showTrainerInfo('Emily Parker')">View Profile</button>
+        </div>
+
+        <div class="trainer-card">
+            <img src="Images/Trainers/Sarah2.jpg" alt="Assistant Trainer 3">
+            <h2>Sarah Wilson</h2>
+            <p>Expertise: Flexibility, Mobility Training</p>
+            <button class="view-more-btn" onclick="showTrainerInfo('Sarah Wilson')">View Profile</button>
+        </div>
+    </section>
+
+    <!-- Modal for Trainer Info -->
+    <div id="trainerModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <h2 id="trainer-name">Trainer Name</h2>
+            <p id="trainer-bio">Trainer's bio and detailed information go here.</p>
+        </div>
+    </div>
+
+    <script src="Trainers.js"></script>
+</body>
+</html>

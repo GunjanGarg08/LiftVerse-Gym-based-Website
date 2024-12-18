@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Classes - LiftVerse</title>
+    <link rel="stylesheet" href="Classes.css">
+    <link rel="shortcut icon" href="Images/Symbol_Logo.png">
+<body>
+    <header>
+        <div class="hero-section">
+            <h1>Explore Our Classes</h1>
+            <p>Find the perfect class to fit your fitness goals</p>
+        </div>
+    </header>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <h1>🎉 Hurry! Sale Ends In:</h1>
+            <div id="countdown"></div>
+            <img src="Images/Sale.png" alt="Sale Image" class="popup-image">
+        </div>
+    </div>
+
+    <section class="class-overview">
+        <h2>Our Classes</h2>
+        <p>From strength training to yoga and everything in between, we offer a wide range of classes to suit every level of fitness. Explore our class schedule and find the perfect one for you.</p>
+    </section>
+
+    <section class="class-grid">
+        <div class="class-card">
+            <img src="Images/Classes/1.jpg" alt="Yoga Class">
+            <h3>Yoga</h3>
+            <p>A calming and invigorating class that enhances flexibility, strength, and mental clarity.</p>
+            <button onclick="bookClass('Yoga')">Book Now</button>
+        </div>
+        <div class="class-card">
+            <img src="Images/Classes/2.jpg" alt="Strength Training Class">
+            <h3>Strength Training</h3>
+            <p>Boost your power and endurance with our intense strength training sessions.</p>
+            <button onclick="bookClass('Strength Training')">Book Now</button>
+        </div>
+        <div class="class-card">
+            <img src="Images/Classes/3.jpg" alt="Spin Class">
+            <h3>Spin</h3>
+            <p>A high-energy cardio workout that will challenge your endurance and speed.</p>
+            <button onclick="bookClass('Spin')">Book Now</button>
+        </div>
+        <div class="class-card">
+            <img src="Images/Classes/4.jpeg" alt="HIIT Class">
+            <h3>HIIT</h3>
+            <p>High-Intensity Interval Training that takes your fitness to the next level with short bursts of intense exercise.</p>
+            <button onclick="bookClass('HIIT')">Book Now</button>
+        </div>
+        <div class="class-card">
+            <img src="Images/Classes/5.jpg" alt="Pilates Class">
+            <h3>Pilates</h3>
+            <p>A low-impact class designed to improve core strength, posture, and flexibility.</p>
+            <button onclick="bookClass('Pilates')">Book Now</button>
+        </div>
+        <div class="class-card">
+            <img src="Images/Classes/6.avif" alt="Zumba Class">
+            <h3>Zumba</h3>
+            <p>A fun and energetic dance workout set to upbeat music, perfect for cardio enthusiasts.</p>
+            <button onclick="bookClass('Zumba')">Book Now</button>
+        </div>
+        <div class="class-card">
+            <img src="Images/Classes/7.webp" alt="CrossFit Class">
+            <h3>CrossFit</h3>
+            <p>Build strength and endurance with this high-intensity class combining weightlifting, cardio, and gymnastics.</p>
+            <button onclick="bookClass('CrossFit')">Book Now</button>
+        </div>
+        <div class="class-card">
+            <img src="Images/Classes/8.webp" alt="Aerobics Class">
+            <h3>Aerobics</h3>
+            <p>Enjoy a dynamic full-body workout with this rhythmic exercise that blends cardio, strength, and flexibility.</p>
+            <button onclick="bookClass('Aerobics')">Book Now</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 LiftVerse. All rights reserved. | <a href="Privacy_Policy.html">Privacy Policy</a></p>
+    </footer>
+
+    <!-- Modal structure -->
+    <div id="modal" class="modal">
+        <div class="modal-container">
+            <!-- <span class="close-btn" onclick="closeModal()">×</span> -->
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <div id="modal-content"></div>
+        </div>
+    </div>
+
+    <script src="Classes.js"></script>
+</body>
+</html>

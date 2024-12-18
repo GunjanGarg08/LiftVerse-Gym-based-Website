@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Tracker App - LiftVerse</title>
+    <link rel="stylesheet" href="Health_Track.css">
+    <link rel="shortcut icon" href="Images/Symbol_Logo.png">
+</head>
+<body>
+    <div class="container">
+        <div class="heading">
+            <h1>Health Tracker App</h1>
+        </div>
+
+        <form id="health-form">
+            <label for="water">Water Intake (in ml):</label>
+            <input type="number" id="water" placeholder="Enter in ml" required><br>
+
+            <label for="exercise">Exercise Duration (in min):</label>
+            <input type="number" id="exercise" placeholder="Enter in min" required><br>
+
+            <label for="sugar">Blood Sugar Level (in mg/dL):</label>
+            <input type="number" id="sugar" placeholder="Enter in mg/dL" required><br>
+
+            <button type="submit" id="submit">Submit</button>
+
+            <div id="editSection" class="hidden"> 
+                <button id="cancelEdit" onclick="cancelEdit()">Cancel</button> 
+                <button id="updateEntry" onclick="editRow()">Update</button> 
+            </div> 
+        </form>
+
+        <br> <br>
+        <h2>Health Records</h2>
+
+        <table id="health-table">
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Water Intake <br> (in ml)</th>
+                    <th>Exercise Duration <br> (in min)</th>
+                    <th>Blood Sugar Level<br> (in mg/dL)</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody id="output">
+                <!-- Rows will be dynamically added here -->
+            </tbody>
+        </table>
+    </div>
+
+    <footer>
+        <p>© 2024 LiftVerse. All rights reserved.</p>
+    </footer>
+
+    <script src= 
+        "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"
+      integrity= 
+        "sha512-GWzVrcGlo0TxTRvz9ttioyYJ+Wwk9Ck0G81D+eO63BaqHaJ3YZX9wuqjwgfcV/MrB2PhaVX9DkYVhbFpStnqpQ=="
+      crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
+
+    <script src="Health_Track.js"></script>
+</body>
+</html>

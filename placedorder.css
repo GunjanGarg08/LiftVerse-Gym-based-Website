@@ -1,0 +1,72 @@
+/* Reset some basic styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background: linear-gradient(to right, #EA3680, black);
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    min-height: 100vh; /* Use 100vh to occupy full viewport height */
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.thank-you-container {
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+    padding: 40px;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-name: main-text-animation;
+}
+
+.main-text {
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+@keyframes main-text-animation {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Button Styles */
+#home-button {
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#home-button:hover {
+    background-color: #45a049;
+}
+
+/* Footer Styles */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #000000;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+}
